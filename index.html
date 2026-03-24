@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>world-explorer</title>
+  </head>
+  <body
+    class="bdy bg-gradient-to-br from-[#0f172a] via-[#1e1b4b] to-[#312e81] min-h-screen text-white overflow-hidden relative"
+  >
+    <!-- Top Left Glow Ball -->
+    <div
+      class="hidden md:flex absolute top-[-100px] left-[-100px] w-[350px] h-[350px] rounded-full bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 opacity-30 blur-[100px] animate-pulse"
+    ></div>
+
+    <!-- Bottom Right Glow Ball -->
+    <div
+      class="hidden md:flex absolute bottom-[-100px] right-[-100px] w-[350px] h-[350px] rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 opacity-30 blur-[100px] animate-pulse"
+    ></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

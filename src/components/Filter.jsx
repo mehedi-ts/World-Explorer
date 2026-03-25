@@ -24,7 +24,7 @@ const Filter = ({ clickHandle }) => {
       </div>
       <div
         id="sort"
-        className="mx-auto flex items-center justify-center  md:flex border-l border-[#9191919c] flex-col md:px-6  gap-1  "
+        className="mx-auto flex items-center justify-center  md:flex md:items-start border-l border-[#9191919c] flex-col md:px-6  gap-1  "
       >
         <label className="text-base hidden md:flex">Sort By</label>
         <select

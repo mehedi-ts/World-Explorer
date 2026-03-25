@@ -5,7 +5,7 @@ const Navbar = ({ clickHandle }) => {
   return (
     <>
       <nav className=" flex items-center justify-between px-4 py-6">
-        <div className="flex items-center justify-center gap-3 text-4xl">
+        <div className="flex items-center justify-center gap-3 text-4xl cursor-pointer">
           <Earth size={60}></Earth>
           World Explorer
         </div>

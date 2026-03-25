@@ -18,7 +18,11 @@ function App() {
       <Navbar clickHandle={clickHandle}></Navbar>
       <Hero></Hero>
       <Filter clickHandle={clickHandle}></Filter>
-      <Suspense fallback={<p>mehedi.....</p>}>
+      <Suspense
+        fallback={
+          <span class="loading loading-infinity loading-10xl mx-auto"></span>
+        }
+      >
         <Countries
           countriesPromis={countriesPromis}
           clickHandle={clickHandle}

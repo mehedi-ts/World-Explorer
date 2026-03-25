@@ -1,19 +1,26 @@
-import { Earth } from "lucide-react";
+import { Earth, Menu } from "lucide-react";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ clickHandle }) => {
   return (
     <>
-      <nav className="border flex items-center justify-between px-4 py-6">
+      <nav className=" flex items-center justify-between px-4 py-6">
         <div className="flex items-center justify-center gap-3 text-4xl">
           <Earth size={60}></Earth>
           World Explorer
         </div>
-        <ul className="flex gap-9">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+        <ul className=" gap-9 hidden md:flex">
+          <li className="text-lg cursor-pointer" onClick={() => clickHandle()}>
+            Home
+          </li>
+          <li className="text-lg cursor-pointer" onClick={() => clickHandle()}>
+            About
+          </li>
+          <li className="text-lg cursor-pointer" onClick={() => clickHandle()}>
+            Contact
+          </li>
         </ul>
+        <Menu onClick={clickHandle} className="md:hidden"></Menu>
       </nav>
     </>
   );
